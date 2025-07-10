@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 def load_model():
-    with open('C:\\Users\\SUNNY\\Downloads\\Software Developer Salary prediction\\pre_saved_steps.pkl', 'rb') as file:
+    with open('pre_saved_steps.pkl', 'rb') as file:
         data = pickle.load(file)
     return data
 
