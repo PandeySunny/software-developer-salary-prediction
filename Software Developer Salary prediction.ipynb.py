@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import pandas as pd
-df = pd.read_csv("C:\\Users\\SUNNY\\Downloads\\Software Developer Salary prediction\\survey_results_public.csv")
+df = pd.read_csv("C:/Users/SUNNY/Downloads/Software Developer Salary predictions/survey_results_public.csv")
 
 df.head()
 
@@ -221,10 +221,10 @@ import pickle
 
 data = {"model": regressor, "le_country": le_country, "le_education": le_education}
 
-with open('C:\\Users\\SUNNY\\Downloads\\Software Developer Salary prediction\\pre_saved_steps.pkl', 'wb') as file:
+with open("C:/Users/SUNNY/Downloads/Software Developer Salary predictions/pre_saved_steps.pkl", 'wb') as file:
     pickle.dump(data, file)
 
-with open('C:\\Users\\SUNNY\\Downloads\\Software Developer Salary prediction\\pre_saved_steps.pkl', 'rb') as file:
+with open("C:/Users/SUNNY/Downloads/Software Developer Salary predictions/pre_saved_steps.pkl", 'rb') as file:
     data = pickle.load(file)
 
 regressor_loaded = data["model"]
