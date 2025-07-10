@@ -31,7 +31,7 @@ def clean_education(x):
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:\\Users\\SUNNY\\Downloads\\Software Developer Salary prediction\\survey_results_public.csv")
+    df = pd.read_csv("C:/Users/SUNNY/Downloads/Software Developer Salary prediction/survey_results_public.csv")
     df = df[["Country", "EdLevel", "YearsCodePro", "Employment", "ConvertedCompYearly"]]
     df = df[df["ConvertedCompYearly"].notnull()]
     df = df.dropna()
